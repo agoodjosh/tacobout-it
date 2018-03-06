@@ -160,11 +160,15 @@ input#searchRadiusInput {
 .recipeImage {
   margin-top: 10%;
   height: 25%;
+  max-width: 100%;
 }
 
 .recipeImage img {
   border: 4px solid #58260e;
   border-radius: 4px;
+  width: auto;
+  max-width: 100%;
+  height: 100%;
 }
 
 .recipeLinks {
@@ -197,7 +201,7 @@ input#searchRadiusInput {
 }
 
 .recipeTextFront {
-  height: 49%;
+  height: 46%;
   margin: 10px;
 }
 
@@ -255,7 +259,7 @@ input#searchRadiusInput {
 
 .recipeModalGetNew,
 .recipeModalBackHome,
-.searchModalExpandToggle {
+.enabled {
   right: 2%;
   background-color: #84c94b;
   border-color: #00a400 #007500 #007500 #00a400;
@@ -270,14 +274,14 @@ input#searchRadiusInput {
 .recipeModalGetNew:active,
 .findBtn:active,
 .recipeModalBackHome:active,
-.searchModalExpandToggle:active {
+.enabled:active {
   border-color: #007500 #00a400 #00a400 #007500;
 }
 
 .recipeModalGetNew:hover,
 .findBtn:hover,
 .recipeModalBackHome:hover,
-.searchModalExpandToggle:hover {
+.enabled:hover {
   background-color: #67ab4a;
 }
 
@@ -290,6 +294,10 @@ input#searchRadiusInput {
 .searchName {
   height: 10%;
   margin: 3%;
+}
+
+.searchName h2 {
+  padding-top: 4px;
 }
 
 .fa-caret-up,
@@ -341,7 +349,7 @@ input#searchRadiusInput {
 .listItem {
   position: relative;
   text-align: center;
-  height: 100px;
+  height: 15vh;
   width: 100%;
   background-color: white;
   border-bottom: 1px dotted black;
@@ -349,13 +357,12 @@ input#searchRadiusInput {
 
 .imgContainer {
   float: left;
-  height: 90px;
-  width: 100px;
+  width: 30%;
+  height: 100%;
 }
 .imgContainer > img {
   height: 100%;
-  width: 100px;
-  margin: 5px;
+  width: 100%;
 }
 
 .image {
@@ -364,7 +371,7 @@ input#searchRadiusInput {
 .name {
   font-size: 1rem;
   margin: 0;
-  padding-top: 15px;
+  padding-top: 5px;
 }
 
 .phoneNumber,
@@ -438,6 +445,11 @@ input#searchRadiusInput {
   height: 80%;
   padding: 7px;
 }
+
+.emptyPlacesList{
+  font-size: 1.3rem;
+}
+
 .makeMeSmaller {
   font-size: 0.8rem;
 }
@@ -467,6 +479,11 @@ input#searchRadiusInput {
   body {
     font-size: 4vmin;
   }
+
+  .recipeModalContainer p {
+    font-size: 5vmin;
+  }
+  
 
   .homeContainer > div > h1 {
     font-size: 7vmin;
